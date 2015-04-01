@@ -300,7 +300,7 @@ class TechMPlot(object):
 
     def format_coord(self, x, y):
         """ 状态栏信息显示 """
-        index = x
+        index = x - 1
         f = x % 1
         index = x-f if f < 0.5 else x-f+1
         #print len(self.kwindow.rects.get_array())
