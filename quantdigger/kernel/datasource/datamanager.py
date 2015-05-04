@@ -407,7 +407,7 @@ def process_tushare_data(data):
     return data
 
 
-import tushare as ts
+
 class LocalData(object):
     """ 本地数据数据接口类。
     
@@ -426,6 +426,7 @@ class LocalData(object):
             FileDoesNotExist
         """
         if pcontract.contract.exch_type == 'stock':
+            import tushare as ts
             # 使用tushare接口
             print "load stock data with tushare..." 
             data = ts.get_hist_data(pcontract.contract.code)

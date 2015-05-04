@@ -2,7 +2,7 @@
 #import os, sys
 #sys.path.append(os.path.join('..', '..'))
 import matplotlib
-matplotlib.use('TkAgg')
+matplotlib.use('Qt4Agg')
 import matplotlib.pyplot as plt
 from quantdigger.plugin.mplotwidgets import techmplot
 from quantdigger.plugin.mplotwidgets import widgets
